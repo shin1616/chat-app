@@ -3,37 +3,66 @@
 }
 
 
-/*  side-bar グループ */
+/* side-bar 大親*/
 .side-bar{
   background-color: #253141;
   width: 300px;
   height: 100vh;
 }
+/* side-header 親*/
 .side-header{
-height: 100px;
-padding: 0 20px;
+  height: 100px;
+  padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
 }
+.user-name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.create-button a{
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  padding: 14px;
+  text-decoration: none;
+}
+/* room 親*/
 .rooms{
-background-color: #2f3e51;
-height: calc(100vh - 100px);
-padding: 0 20px;
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+.room{
+  padding: 20px 0 40px;
+}
+.each-rooms a{
+  color: white;
+  text-decoration: none;
 }
 
-/*  main グループ */
+/* main 大親 */
 .main-chat{
   background-color: #ffffff;
   width: calc(100vw - 300px) ;
   height: 100vh;
 }
+/* main-header 親*/
 .main-header{
   height: 100px;
   padding: 0 40px;
 }
+/* message 親*/
 .message{
   height: calc(100vh - 100px - 90px) ;
   background-color: #fafafa;
   padding: 46px 40px 0;
 }
+/* form 親*/
 .form{
   height: 90px;
   background-color: #dddddd;
